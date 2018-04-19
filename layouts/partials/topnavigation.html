@@ -43,7 +43,7 @@
     {{ with .Site.Params.social.twitter }}
     <li>
       <a href="{{ . }}" data-animate-hover="pulse" class="twitter" target="_blank">
-        <i class="fa fa-twitter-square" title="twitter"></i>
+        <i class="fa fa-twitter" title="twitter"></i>
         <span class="screen-reader-text">twitter</span>
       </a>
     </li>
@@ -51,7 +51,7 @@
 
     {{ with .Site.Params.social.instagram }}
     <li>
-      <a href="{{ . }}" data-animate-hover="pulse" class="twitter" target="_blank">
+      <a href="{{ . }}" data-animate-hover="pulse" class="instagram" target="_blank">
         <i class="fa fa-instagram" title="instagram"></i>
         <span class="screen-reader-text">instagram</span>
       </a>
@@ -91,6 +91,15 @@
       <a href="{{ . }}" data-animate-hover="pulse" class="github" target="_blank">
         <i class="fa fa-github" title="github"></i>
         <span class="screen-reader-text">github</span>
+      </a>
+    </li>
+    {{end}}
+
+    {{ with .Site.Params.social.twitch }}
+    <li>
+      <a href="{{ . }}" data-animate-hover="pulse" class="twitch" target="_blank">
+        <i class="fa fa-twitch" title="twitch"></i>
+        <span class="screen-reader-text">twitch</span>
       </a>
     </li>
     {{end}}

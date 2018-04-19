@@ -17,8 +17,7 @@
   				{{ .Content }}
 
   		<div id="simple-contact-form" class="scf">
-      {{ with .Site.Params.email }}
-  			<form method="post" action="https://formspree.io/{{ . }}">
+  			<form method="post" action="https://formspree.io/kellen@kscarlett.com">
   				<fieldset class="scf-name">
   					<label for="scf_name">Name (Required)</label>
   					<input name="scf_name" id="scf_name" type="text" size="33" maxlength="99" value="" placeholder="Your Name">
@@ -42,7 +41,6 @@
   				</div>
   			</form>
         <style>#simple-contact-form fieldset { width: 100%; overflow: hidden; margin: 12px 0; border: 0; padding: 1px; } #simple-contact-form fieldset input { float: left; width: 60%; } #simple-contact-form textarea { float: left; clear: both; width: 95%; } #simple-contact-form label { float: none; clear: both; display: block; margin-bottom: 12px;}</style>
-        {{ end }}
   		</div>
   		<div style="clear:both">&nbsp;</div>
   							</article>

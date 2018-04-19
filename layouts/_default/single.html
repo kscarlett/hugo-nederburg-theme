@@ -112,14 +112,14 @@
   {{ with .Site.Params.social.twitter }}
   <a class="twitter" target="_blank"
   href="{{ . }}">
-  <i class="fa fa-twitter-square"
+  <i class="fa fa-twitter"
   title="twitter icon"></i>
 </a>
 {{end}}
 {{ with .Site.Params.social.linkedin }}
 <a class="linkedin" target="_blank"
 href="{{ . }}">
-<i class="fa fa-linkedin-square"
+<i class="fa fa-linkedin"
 title="linkedin icon"></i>
 </a>
 {{end}}
@@ -153,6 +153,14 @@ title="stackoverflow icon"></i>
 href="{{ . }}">
 <i class="fa fa-github"
 title="github icon"></i>
+</a>
+{{end}}
+
+{{ with .Site.Params.social.twitch }}
+<a class="twitch" target="_blank"
+href="{{ . }}">
+<i class="fa fa-twitch"
+title="twitch icon"></i>
 </a>
 {{end}}
 

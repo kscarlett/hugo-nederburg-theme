@@ -46,7 +46,7 @@
         {{ with .Site.Params.social.twitter }}
         <li>
         <a href="{{ . }}"  class="twitter" target="_blank">
-            <i class="fa fa-twitter-square" title="twitter"></i>
+            <i class="fa fa-twitter" title="twitter"></i>
             <span class="screen-reader-text">twitter</span>
         </a>
         </li>
@@ -54,7 +54,7 @@
 
         {{ with .Site.Params.social.instagram }}
         <li>
-        <a href="{{ . }}"  class="twitter" target="_blank">
+        <a href="{{ . }}"  class="instagram" target="_blank">
             <i class="fa fa-instagram" title="instagram"></i>
             <span class="screen-reader-text">instagram</span>
         </a>
@@ -97,6 +97,16 @@
         </a>
         </li>
         {{end}}
+
+        {{ with .Site.Params.social.twitch }}
+        <li>
+        <a href="{{ . }}"  class="twitch" target="_blank">
+            <i class="fa fa-twitch" title="twitch"></i>
+            <span class="screen-reader-text">twitch</span>
+        </a>
+        </li>
+        {{end}}
+
 				</ul>	<div class="design-credit">
 		{{ range .Site.Params.copyright }}
 		<p>{{ . | markdownify }}</p>
