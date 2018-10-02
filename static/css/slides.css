@@ -22,9 +22,9 @@ h3 {
 }
 
 .remark-slide-content {
-  background-position: center; !important
-  background-repeat: no-repeat; !important
-  background-size: contain; !important
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 .footnote {
   position: absolute;
