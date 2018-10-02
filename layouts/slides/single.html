@@ -6,7 +6,7 @@
     {{ with .Title }}
     <title>{{ . }}</title>
     {{ end }}
-    
+
     {{ with .Page.Params.description }}
     <meta name="description" content="{{ . | default "" }}">
     {{ end }}
@@ -17,19 +17,23 @@
     {{else}}
     <meta name="robots" content="noindex">
     {{end}}
-    
+
     <!-- Default stylesheet for presentations - maybe make configurable if I need Raving Tree Games branded presentations sometime -->
     <link href="{{ "css/slides.css" | absURL }}" rel="stylesheet" type='text/css' media='all'>
     <link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}" type="image/x-icon">
     <link rel="icon" href="{{ "img/favicon.ico" | absURL }}" type="image/x-icon">
 </head>
 <body>
-<textarea id="source">
+    <textarea id="source">
 {{ .RawContent }}
 </textarea>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>
-    var slideshow = remark.create({});
-</script>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+        var slideshow = remark.create({
+            ratio: '16:9',
+            highlightLanguage: 'bash',
+            highlightStyle: 'atom-one-dark',
+        });
+    </script>
 </body>
 </html>
