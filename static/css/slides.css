@@ -20,6 +20,12 @@ h3 {
 .remark-slide-content h3 {
   font-size: 1.6em;
 }
+
+.remark-slide-content {
+  background-position: center; !important
+  background-repeat: no-repeat; !important
+  background-size: contain; !important
+}
 .footnote {
   position: absolute;
   bottom: 3em;
