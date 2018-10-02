@@ -26,6 +26,9 @@ h3 {
   background-repeat: no-repeat !important;
   background-size: contain !important;
 }
+.no-number .remark-slide-number {
+  display: none;
+}
 .footnote {
   position: absolute;
   bottom: 3em;
