@@ -1,9 +1,5 @@
 <!DOCTYPE html><html>
     <head>
-        {{if .Page.Params.govanity -}}
-        <meta name="go-import" content="kscarlett.com{{substr .Page.RelPermalink 0 -1}} git {{.Page.Params.govanity}}">
-        <meta name="go-source" content="kscarlett.com{{substr .Page.RelPermalink 0 -1}} {{.Page.Params.govanity}} {{.Page.Params.govanity}}/tree/master{/dir} {{.Page.Params.govanity}}/blob/master{/dir}/{file}#L{line}">
-        {{- end}}
         <title>{{ .Permalink }}</title>
         <link rel="canonical" href="{{ .Permalink }}"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
